@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060a3b;
+}
+.nav-container {
+  background-color: #fff;
+}
+.nav1 {
+    width: 100vw;
+  background-color: #9aa9ff;
+  padding: 20px;
+}
+.nav1 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav1 li {
+  display: block;
+}
+.nav1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.nav1 .dropdown1 {
+  display: none;
+  line-height: 2rem;
+}
+.nav1 .content1:hover .dropdown1 {
+  display: block;
+  position: absolute;
+  width: 150px;
+  background-color: #6c92c490;
+  border-radius: 10px;
+}
+.nav1 .dropdown2 {
+  display: none;
+  line-height: 2rem;
+}
+.nav1 .content2:hover .dropdown2 {
+  display: block;
+  position: absolute;
+  background-color: #6c92c490;
+  border-radius: 10px;
+}
+.nav1 a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav1 a:hover::after {
+  transform: scaleX(1);
+}
+.title {
+  font-size: 1.5rem;
+  color: #f8ffdf;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+ 
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  margin-left: 30rem;
+  height: 2px;
+  bottom: 1;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.title:hover::after {
+  transform: scaleX(1);
+}
+.slide-container{
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+}
+.slide{
+    width: 100vw;
+    display: flex;
+    aspect-ratio: 100/25;
+    overflow-x: scroll ;
+    border-radius: 25px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+  .slide img{
+    flex: 1 0 50%;
+    scroll-snap-align: start;
+    object-fit: cover ;
+}
+
+.title2{
+    color: #f8ffdf;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-top: 5rem;
+}
